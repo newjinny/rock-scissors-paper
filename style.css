@@ -1,0 +1,44 @@
+*{
+  justify-content: center;
+  text-align: center;
+}
+h1{
+  color: rgb(230, 91, 67);
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+
+  
+}
+table{
+  margin-top:20px;
+}
+td{
+  width: 180px;
+  height: 40px;
+  background-color:rgb(250, 208, 201);
+  font-size: 20px;
+}
+th{
+  height: 180px;
+  border: 2px solid rgb(250, 208, 201);
+}
+
+th img{
+  width: 140px;
+}
+
+.btnImg {
+  margin-top: 50px;
+
+}
+.btnImg img {
+  display:flex;
+  flex-direction: column;
+  width: 50px;
+  margin: 10px;
+  cursor:pointer;
+  
+}
