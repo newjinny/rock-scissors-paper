@@ -5,13 +5,16 @@ const rock = document.querySelector("#rock");
 const smallPics = document.querySelectorAll(".small");
 
 // imgArr.map((img, idx) => {div.appendChild(img, src, 'img[idx]')})
+for (let i = 0; i < smallPics.length; i++) {
+  smallPics[i].addEventListener("click", changePic);
+  // winner(randomNumber, user);
+}
 
-let user = null;
+// let user = null;
 function changePic() {
   const newPic = this.src;
-
   rock.setAttribute("src", newPic);
-  user = imgArr.indexOf(newPic.slice(-8));
+  // user = imgArr.indexOf(newPic.slice(-8));
 }
 
 //컴퓨터 랜덤 이미지
@@ -39,11 +42,4 @@ function winner(randomNumber, user) {
   } else {
     console.log("졌습니다.");
   }
-}
-
-for (let i = 0; i < smallPics.length; i++) {
-  smallPics[i].addEventListener("click", () => {
-    changePic();
-    winner(randomNumber, user);
-  });
 }
